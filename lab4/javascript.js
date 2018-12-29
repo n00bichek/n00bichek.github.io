@@ -6,7 +6,7 @@ function onClick() {
             document.getElementById('image').setAttribute('src', data.avatar_url)
             var arr = ['name', 'login', 'bio', 'company', 'location', 'email', 'blog']
             arr.forEach((id)=>{
-            	document.getElementById(id).innerHTML = data[id] ? data[id] : 'no information about ' + id
+            	document.getElementById(id).innerHTML = data[id] ? data[id] : 'error by ' + id
             })
         })
         .catch(error => console.log(error))
